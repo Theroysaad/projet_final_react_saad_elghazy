@@ -1,0 +1,42 @@
+.myImg{
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: '' ;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        transition: 1s;
+    }
+
+    &:hover::before {
+        transition: 1s;
+        background-color: rgba(0, 0, 0, 0.354) ;
+    }
+
+    .myBtn{
+        position: absolute;
+        bottom: -10%;
+        right: 50%;
+        transform: translate(50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 3);
+        padding: 0.3rem 1.2rem;
+        border-radius: 2rem;
+        width: 60%;
+        transition: 0.4s;
+    }
+    &:hover{
+        .myBtn{
+            color: white;
+            bottom: 10%;
+            right: 50%;
+            background-color: rgb(0, 0, 0);
+            &:hover{
+                background-color: crimson;
+            }
+        }
+    }
+
+}
